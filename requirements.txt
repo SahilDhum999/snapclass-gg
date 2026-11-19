@@ -1,0 +1,23 @@
+streamlit #for building web apps
+# Utilitites 
+numpy #numerical computing library
+pandas #data manipulation library
+
+# FACE RECOGNITION
+scikit-learn #machine learning library
+dlib-bin #face recognition library
+git+https://github.com/ageitgey/face_recognition_models
+setuptools<70.0.0
+
+
+supabase #storing records in supabase
+bcrypt #for password hashing
+
+
+
+segno #for generating QR codes
+pillow #for image processing
+
+
+
+streamlit
