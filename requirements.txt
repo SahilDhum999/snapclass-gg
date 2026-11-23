@@ -21,3 +21,6 @@ pillow #for image processing
 
 
 streamlit
+
+librosa # Librosa is used for general audio and music signal analysis
+resemblyzer # designed to analyze, compare, and identify human voices.
