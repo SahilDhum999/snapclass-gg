@@ -28,7 +28,7 @@ def get_face_embeddings(image_np):
 
     for face in faces:
         shape=sp(image_np, face) #getting landmarks of the face
-        face_descriptor=facerec.compute_face_descriptor(image_np, shape) #getting 128D vector for the face
+        face_descriptor=facerec.compute_face_descriptor(image_np, shape,1) #getting 128D vector for the face
         encoding.append(np.array(face_descriptor)) #appending the vector to the list
     return encoding
 
@@ -92,6 +92,6 @@ def predict_attendance(class_image_np):
 
         if best_match_score <=resemblance_threshold:
             detected_student[predicted_id] =True
-    return detected_student,all_students,len(encoding)
+    return detected_student,all_students,len(encodings)
 
     
